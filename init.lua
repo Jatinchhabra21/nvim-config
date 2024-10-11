@@ -1,6 +1,5 @@
 require("config")
 require("config.lazy")
-print("hello")
 local set = vim.opt -- set options
 
 -- change tab widths
@@ -8,5 +7,6 @@ set.tabstop = 4
 set.softtabstop = 4
 set.shiftwidth = 4
 
--- add relative line numbers
+-- add hybrid line numbers
 vim.wo.relativenumber = true
+vim.wo.number = true
